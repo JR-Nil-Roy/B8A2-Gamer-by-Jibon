@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.btn-1{
+    padding: 15px 25px;
+    color: white;
+    background-color: #4EC5F7;
+    border: none;
+    border-radius: 45px;
+}
+
+.btn-2{
+    padding: 15px 20px;
+    color: white;
+    background-color: #F948B2;
+    border-radius: 45px;
+    border: none;
+}
+
+
+.p-10 {
+    padding: 0 15rem;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+/* header design */
+header {
+    width: 100%;
+
+}
+
+.head-1 {
+    padding: 20px 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.head-1 .logo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    font-family: 'Tektur';
+    width: 25%;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.logo h1 {
+    font-size: 45px;
+    color: #0B0223;
+}
+
+.logo span {
+    color: #FF42A5;
+
+}
+
+.menus ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menus ul li a {
+    color: #3C354F;
+    text-align: center;
+    font-family: 'Tektur';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.follow {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 12rem;
+    font-family: 'Tektur';
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.head-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 580px;
+    gap: 5rem;
+}
+
+.head-2 .header-img {
+    height: 90%;
+    width: 50%;
+}
+
+.head-2 .header-img img {
+    width: 100%;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-image: url(./images/Group\ 14.png);
+}
+
+.header-info p {
+    color: #0B0223;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header-info h1 {
+    text-align: center;
+    font-family: 'Tektur';
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: #fff;
+}
+.header-info ul li{
+    /* list-style: circle; */
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    line-height: 2rem;
+
+}
+.btns{
+    display: flex;
+    width: 80%;
+    gap: 3rem;
+}
+.online{
+    
+}
+
+
+
+
+
+/* Responsive design */
+
+@media screen and (max-width:1280px) {
+    
+    body{
+        width: 1280px;
+    }
+    .head-1{
+        margin-bottom: 20px;
+    }
+    .head-2{
+        height: auto;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    body{
+        width: 768px;
+    }
+    .p-10{
+        padding: 0 2rem;
+    }
+    .head-1{
+        display: block;
+    }
+    .head-1 .logo{
+
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .menus{
+        flex-direction: column;
+    }
+    .menus ul{
+        flex-direction: column;
+    }
+    .head-2{
+        flex-direction: column-reverse;
+    }
+    
+}
