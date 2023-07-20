@@ -53,8 +53,10 @@ header {
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
-    font-family: 'Tektur';
+    font-family:'Montserrat';
     width: 25%;
+    padding: 5px 0;
+
 }
 
 .logo img {
@@ -62,8 +64,12 @@ header {
 }
 
 .logo h1 {
-    font-size: 45px;
     color: #0B0223;
+    font-family: 'Tektur';
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .logo span {
@@ -208,6 +214,39 @@ header {
 
 
 }
+.play-card .play .play-h{
+    position: relative;
+}
+.play-card .play .overlay img{
+    height: 2rem;
+    width: 2rem;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 2rem;
+    flex-direction: column;
+    border: 2px solid #F948B2;
+    color: #FF42A5;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+  }
+  .overlay button{
+      color: #FF42A5;
+  }
+
+.play-h:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+  }
 
 .play-card img {
     width: 100%;
@@ -316,7 +355,8 @@ header {
     transition-delay: 200ms;
 
 }
-.items:hover{
+
+.items:hover {
     cursor: pointer;
     border: 1px solid #FF42A5;
     border-radius: 50px;
@@ -337,10 +377,66 @@ header {
     line-height: normal;
 }
 
+footer {
+    background-color: #0B0223;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+footer .logo1 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
 
+footer .logo1 h1 {
+    color: #fff;
+    font-family: 'Tektur';
+    font-weight: 700;
+}
+footer .logo1 h1 span{
+    color: #FF42A5;
+}
+footer .unik{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 1rem;
 
+}
+footer .unik p{
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    cursor: pointer;
+}
+footer .f-logo{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 2rem;
+}
+footer .f-tarm {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1rem;
+}
+footer .f-tarm p{
+    color: #ffffffc8;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    cursor: pointer;
+}
 
+footer .foot{
+    color: rgba(255, 255, 255, 0.776);
+    font-family: 'Montserrat';
+    font-size: 12px;
+}
 
 /* Responsive design */
 
@@ -403,16 +499,25 @@ header {
         text-align: center;
         font-size: 16px;
     }
-    .i-game{
-        height: 300px;
-        width: 300px;
+
+    .i-game {
+        height: 350px;
+        width: 345px;
     }
-    .i-game .im-1{
+
+    .i-game .im-1 {
         height: 100%;
         width: 100%;
     }
 
-    .cetagory{
+    .i-game .im-2 {
+        height: 180px;
+        position: absolute;
+        top: 200px;
+        right: 235px;
+    }
+
+    .cetagory {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -499,12 +604,33 @@ header {
         height: 100%;
     }
 
-    .i-game .im-2{
+    .i-game .im-2 {
         height: 220px;
         width: 180px;
         position: absolute;
         top: 250px;
         left: -65px;
+    }
+
+    footer .unik{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    footer .unik p{
+        font-size: 14px;
+    }
+    footer .f-logo{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    footer .f-logo img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    footer .f-tarm{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 1.5rem;
     }
 }
 
@@ -513,14 +639,15 @@ header {
         width: 100%;
         height: 100%;
     }
-    .head-1{
+
+    .head-1 {
         padding: 50px 8rem;
         width: 100%;
     }
 
-    .i-game .im-2{
-        height: 100px;
-        width: 80px;
+    .i-game .im-2 {
+        height: 215px;
+        width: 160px;
         position: absolute;
         top: 180px;
         left: -55px;
