@@ -658,14 +658,24 @@ footer .foot{
     .head-1{
         padding: 0 ;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        display: block;
         margin: 0 auto;
+    }
+    .head-1 .logo {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        font-family: 'Montserrat';
+        width: 25%;
+        padding: 5px 0;
     }
 
 
     .head-1 .logo img{
-        width: 25%;
+        width: 50%;
     }
     .head-1 .menus ul{
         flex-direction: column;
