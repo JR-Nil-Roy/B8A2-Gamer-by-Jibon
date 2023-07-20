@@ -25,7 +25,7 @@
 
 
 .p-10 {
-    padding: 3rem 15rem;
+    padding: 5rem 15rem;
 }
 
 body {
@@ -230,12 +230,112 @@ header {
 }
 
 
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game .p-game {
+    width: 35%;
 
 
+}
+
+.p-game h2 {
+    text-align: right;
+    font-family: 'Tektur';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem;
+    padding-bottom: 30px;
+
+}
+
+.p-game span {
+    color: #FF42A5;
+}
+
+.p-game p {
+    color: #534C64;
+    text-align: right;
+    font-family: 'Montserrat';
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+
+}
+
+.i-game {
+    height: 35rem;
+    width: 35rem;
+    position: relative;
+}
+
+.i-game .im-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.i-game .im-2 {
+    height: 280px;
+    width: auto;
+    position: absolute;
+    top: 335px;
+    right: 380px;
+}
+
+.cet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cetagory {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 
 
+}
 
+.items {
 
+    display: flex;
+    padding: 5px 10px;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 200ms;
+
+}
+.items:hover{
+    cursor: pointer;
+    border: 1px solid #FF42A5;
+    border-radius: 50px;
+    background-color: #de92c041;
+}
+
+.items img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.items h2 {
+    color: #0B0223;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 
@@ -250,11 +350,11 @@ header {
         width: 1280px;
     } */
     .p-10 {
-        padding: 20px 7rem;
+        padding: 30px 7rem;
     }
 
     .head-1 {
-        margin-bottom: 20px;
+        margin: 20px auto;
         padding: 20px 7rem;
     }
 
@@ -270,14 +370,51 @@ header {
         font-size: 36px;
         padding-top: 30px;
     }
-    .play-card{
+
+    .play-card {
         gap: 5px;
         display: block;
     }
-    .play{
+
+    .play {
         height: auto;
         width: 300px;
         height: 380px;
+    }
+
+    .game {
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .p-game {
+        width: 100%;
+
+    }
+
+    .p-game h2 {
+        text-align: center;
+        font-size: 36px;
+        padding-bottom: 15px;
+    }
+
+    .p-game p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .i-game{
+        height: 300px;
+        width: 300px;
+    }
+    .i-game .im-1{
+        height: 100%;
+        width: 100%;
+    }
+
+    .cetagory{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -289,7 +426,7 @@ header {
     }
 
     .p-10 {
-        padding: 0;
+        padding: 25px;
     }
 
     .head-1 {
@@ -330,4 +467,62 @@ header {
         gap: 20px;
     }
 
+    .game {
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .p-game {
+        width: 100%;
+
+    }
+
+    .p-game h2 {
+        text-align: center;
+        font-size: 36px;
+        padding-bottom: 15px;
+    }
+
+    .p-game p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .i-game {
+        height: 60%;
+        width: 60%;
+    }
+
+    .i-game .im-1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .i-game .im-2{
+        height: 220px;
+        width: 180px;
+        position: absolute;
+        top: 250px;
+        left: -65px;
+    }
+}
+
+@media screen and (min-width:460px) and (max-width:690px) {
+    .i-game .im-1 {
+        width: 100%;
+        height: 100%;
+    }
+    .head-1{
+        padding: 50px 8rem;
+        width: 100%;
+    }
+
+    .i-game .im-2{
+        height: 100px;
+        width: 80px;
+        position: absolute;
+        top: 180px;
+        left: -55px;
+    }
 }
