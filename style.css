@@ -525,11 +525,13 @@ footer .foot{
 
 
 
-@media screen and (max-width:768px) {
-    body {
+@media screen and (min-width:690px) and (max-width:768px) {
+    /* body {
         width: 100%;
+    } */
+    .matha{
+        margin: 0 auto;
     }
-
     .p-10 {
         padding: 25px;
     }
@@ -572,6 +574,12 @@ footer .foot{
         gap: 20px;
     }
 
+    .g-on{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .game {
         align-items: center;
         flex-direction: column;
@@ -596,7 +604,7 @@ footer .foot{
 
     .i-game {
         height: 60%;
-        width: 60%;
+        width: 80%;
     }
 
     .i-game .im-1 {
@@ -605,10 +613,10 @@ footer .foot{
     }
 
     .i-game .im-2 {
-        height: 220px;
-        width: 180px;
+        height: 310px;
+        width: 200px;
         position: absolute;
-        top: 250px;
+        top: 326px;
         left: -65px;
     }
 
@@ -634,22 +642,106 @@ footer .foot{
     }
 }
 
-@media screen and (min-width:460px) and (max-width:690px) {
+@media screen and (min-width:360px) and (max-width:690px) {
+    .p-10{
+        padding: 20px 50px;
+    }
+    .matha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 420px;
+        margin-bottom: 8rem;
+    }
+    
+    .head-1{
+        padding: 0 ;
+        width: 100%;
+        flex-direction: column;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .head-1 .logo img{
+        width: 25%;
+    }
+    .head-1 .menus ul{
+        flex-direction: column;
+    }
+.head-1 .menus{
+    flex-direction: column;
+}
+    .head-2{
+        display: block;
+    }
+    .head-2 .header-img{
+        width: 100%;
+    }
+    .head-2 .header-img{
+        align-items: center;
+    }
+    .online{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .g-on{
+        margin-bottom: 60px;
+    }
     .i-game .im-1 {
         width: 100%;
         height: 100%;
-    }
 
-    .head-1 {
-        padding: 50px 8rem;
+    }
+    .game{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .game .p-game {
         width: 100%;
     }
+    .i-game {
+        height: 19rem;
+        width: 19rem;
+            position: relative;
+        }
 
     .i-game .im-2 {
-        height: 215px;
-        width: 160px;
+        height: 170px;
+        width: 140px;
         position: absolute;
         top: 180px;
         left: -55px;
+    }
+
+    .play-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .unik{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    footer .unik p{
+        font-size: 14px;
+    }
+    footer .f-logo{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    footer .f-logo img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    footer .f-tarm{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 1.5rem;
     }
 }
